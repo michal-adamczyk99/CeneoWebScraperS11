@@ -1,4 +1,4 @@
-def get_component(tag_subtree, opinion, selector, attribute=None, return_list=False):
+def get_component(tag_subtree, selector, attribute=None, return_list=False):
     try:
         if attribute:
             return tag_subtree.select(selector).pop(0)[attribute].strip()
